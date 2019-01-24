@@ -1,0 +1,156 @@
+@font-face{
+	font-family: "Mark Simonson";
+	src:url("../fonts/Mark Simonson - Proxima Nova Thin_0.otf");
+}
+@font-face{
+	font-family: "Mar Simonson Bold";
+	src:url("../fonts/Mark Simonson - Proxima Nova Semibold_0.otf");
+}
+
+:root{
+	--margin-left: 0px;
+	--margin-right:0px;
+	--size-h1:60px;
+	--size-h2:40px;
+	@media screen and(max-width:800px) {
+		--size-h1:50px;
+		--size-h2:30px;
+		--margin-left: 10px;
+		--magin-right: 10px;
+	}
+
+
+	@media screen and(max-width:600px) {
+		
+		--size-h1:45px;
+		--size-h2:20px;
+
+		
+	}
+	@media screen and(max-width:300px){
+
+		--size-h1:30px;
+		--size-h2:15px;		
+
+
+	}
+}
+
+.alert{
+	font-family: "Mark Simonson";
+	font-size: 10px;
+	padding: 0px;
+	margin: 0px;
+	color: #fc4f6d;
+	opacity: 0;
+}
+.buscar{
+	margin-top: 3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.row a{
+	text-align: center;
+}
+.boton{
+	display: inline-block;
+	padding: 8px 15px;
+	text-decoration: none;
+	color:#fff;
+}
+.boton:hover{
+	color: white;
+	position: relative;
+	top: 2px;
+}
+
+.verde{
+	background:  #fd4e6d;
+	border-radius: 8px 8px;
+	border-bottom: 4px solid #d5324f;
+	border-right : 4px solid #d5324f;
+}
+.verde:hover{
+	text-decoration: none;
+	border-bottom: 2px solid #d5324f;
+	border-right: 2px solid #d5324f;
+}
+
+
+.row{
+	margin-top: 50px;
+}
+
+::placeholder{
+	color: #69686d; 
+}
+
+.frm{
+	outline: none;
+	border:none;
+	border-bottom: 2px solid  ;
+	border-color: #bfbfbf;
+	color: #3e3a4b;
+	width: 	100%;
+	font-family: "Mark Simonson";
+}
+select{
+	outline: none;
+	border:none;
+	margin-bottom: 2px;
+	border-bottom: 1px solid ;
+	border-color: 	#bfbfbf;
+	color: #3e3a4b;
+	width: 100%;
+	font-family: "Mark Simonson";
+}
+h1{
+	font-size: var(--size-h1);
+}
+h2{
+	font-size: var(--size-h2);
+}
+h1,h2{
+	text-align: center;	
+	font-family: 'Mark Simonson';
+}
+
+.contenedor{
+	width: 100%;
+	margin-top :30px;
+	display: flex;
+	align-items: center; 
+	justify-content: center
+}
+.content{
+	width: 	700px;
+	margin-left: var(--margin-left);
+	margin-right: var(--margin-right);
+}
+
+span{
+	font-weight: bold;
+	font-family: "Mar Simonson Bold";
+}
+
+/*
+@media(max-width: 600px)
+{
+		h1{
+		font-size: 45px;
+	}
+	h2{
+		font-size: 	20px;
+	}
+
+}
+@media(max-width: 300px)
+{
+	h1{
+		font-size: 30px;
+	}
+	h2{
+		font-size: 15px;
+	}
+}*/

@@ -1,0 +1,50 @@
+.footer{
+	width: 100%;
+	height: auto;
+  background:linear-gradient(to right , #089aed,#3955ff);
+	padding: 10px; 
+	position: relative;
+	bottom: 0;
+}
+.footer a{
+	text-decoration: none;
+	color :#fff;
+	float:right;
+}
+
+.footer img{
+	width: 160px;
+	height: 30px;
+}
+
+.download{
+	margin-right: 20px;
+}
+@media (max-width:638px){
+	.footer a{
+		float: none;
+	}
+}
+
+
+
+
+
+
+
+.hidden{
+	display: none;
+}
+
+
+
+
+
+
+.center{
+	text-align: center;
+}
+.center img{
+		width: 150px;
+		height: 50px;
+}

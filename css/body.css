@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "Mark Simonson";
+  src: url("../fonts/Mark Simonson - Proxima Nova Thin_0.otf"); }
+
+@font-face {
+  font-family: "Mar Simonson Bold";
+  src: url("../fonts/Mark Simonson - Proxima Nova Semibold_0.otf"); }
+
+:root {
+  --margin-left: 0px;
+  --margin-right:0px;
+  --size-h1:60px;
+  --size-h2:40px; }
+  @media screen and (max-width: 800px) {
+    :root {
+      --size-h1:50px;
+      --size-h2:30px;
+      --margin-left: 10px;
+      --magin-right: 10px; } }
+  @media screen and (max-width: 600px) {
+    :root {
+      --size-h1:45px;
+      --size-h2:20px; } }
+  @media screen and (max-width: 300px) {
+    :root {
+      --size-h1:30px;
+      --size-h2:15px; } }
+
+.alert {
+  font-family: "Mark Simonson";
+  font-size: 10px;
+  padding: 0px;
+  margin: 0px;
+  color: #fc4f6d;
+  opacity: 0; 
+}
+.frm{
+  outline: none;
+  border:none;
+  border-bottom: 1px solid;
+  border-color:  #CBCBCA;
+  color: #3e3a4b;
+  width:  100%;
+  font-family: "Mark Simonson";
+}
+.buscar {
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.row a {
+  text-align: center; 
+}
+.row{
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+.boton {
+  display: inline-block;
+  padding: 8px 15px;
+  color: #fff; 
+}
+
+.boton:active {
+
+  position: relative;
+  top: 2px; 
+  text-decoration: none;
+}
+
+.verde {
+  background: #f1358a;
+  border-radius: 8px 8px;
+  border-bottom: 4px solid #f1358a;
+  border-right: 4px solid #f1358a; 
+  cursor: pointer;
+
+}
+.verde:focus{
+  outline: 0;
+}
+.verde:active {
+  text-decoration: none;
+   background: #f1358a;
+  border-bottom: 2px solid #f1358a;
+  border-right: 2px solid #f1358a; 
+}
+
+.row {
+  margin-top: 50px; }
+
+::-webkit-input-placeholder {
+  color: #69686d; }
+
+:-ms-input-placeholder {
+  color: #69686d; }
+
+::-ms-input-placeholder {
+  color: #69686d; }
+
+::placeholder {
+  color: #69686d; }
+
+input {
+  outline: none;
+  border: none ;
+  border-bottom: 1Px solid;
+  border-color: #bfbfbf;
+  color: #3e3a4b;
+  width: 100%;
+  font-family: "Mark Simonson"; }
+
+select {
+  outline: none;
+  border: none;
+  margin-bottom: 2px;
+  border-bottom: 1px solid;
+  border-color: #bfbfbf;
+  color: #3e3a4b;
+  width: 100%;
+  font-family: "Mark Simonson";
+}
+
+
+h1 {
+  font-size: var(--size-h1); }
+
+h2 {
+  font-size: var(--size-h2); }
+
+h1, h2 {
+  text-align: center;
+  font-family: 'Mark Simonson'; }
+
+.contenedor {
+  width: 100%;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.content {
+  width: 700px;
+  margin-left: var(--margin-left);
+  margin-right: var(--margin-right); }
+
+span {
+  font-weight: bold;
+  font-family: "Mar Simonson Bold"; }
+
+  @media(min-width: 1400px)
+  { 
+    .footer{
+     
+    }
+  }
+  
+@media(max-width: 600px)
+{
+  .content{
+    width: 400px;
+  }
+}
+@media(max-width: 600px)
+{
+  .content{
+    width: auto;
+  }
+
+}

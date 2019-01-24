@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Yamila</title>
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/body.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js
+"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	
+
+		<header>	
+		<div class="contenedorr">	
+				<a href="#"><img src="img/logo.png" alt=""></a>
+				<input type="checkbox" id ="menu-bar">
+				<label id="lbl" class="fas fa-bars" for="menu-bar"></label>
+				<nav class="menu">	
+						<a href=""  class="efecto">INICIO</a>
+						<a href=""  class="efecto">CONOCEME</a>
+						<a href="" 	class="efecto" >BENEFICIOS</a>
+						<a href=""  class="efecto">HUMANOS</a>
+						<a href=""  class="efecto">CONTACTAME</a>
+						<div class="comprobante">
+							<a href="" >BUSCA TU COMPROBA</a>	
+						</div>
+				</nav>
+		</div>
+
+
+		</header>
+
+<div class="contenedor">
+	<div class="content">
+	
+		<div>
+				<h1>Busca <span>tu comprobante</span> 
+				</h1>		
+		</div>
+	
+		<div class="consulta">
+			<h2>Consulta tu documento electronico y <br>descargarlo en <span>PDF, XML o CDR</span></h2>
+		</div>
+	
+
+		
+		
+		<div class="row">			
+				<div class="form-group col-md-12 ">	
+					<input  class= "frm" id	="in-ruc" type="number" min="99"  max ="999" placeholder ="RUC del emisor" >
+					<label id="ruc" class= "alert" for=""></label>
+				
+				</div>
+
+				<div class="form-group col-md-6 ">	
+					<select name="" class ="frm" id="in-fac" >
+						<option  value="Factura">Factura</option>
+						<option  value="Facturas">Facturas</option>
+					</select>
+					<label id="factura" class= "alert" for=""></label>
+				</div>
+			
+				<div class="form-group col-md-6 ">	
+					<input  id	="in-ser" class="frm" type="text" placeholder ="Serie o numero" class="">
+					<label id="serie" class= "alert" for=""></label>
+				</div>
+			
+				<div class="form-group col-md-6 ">	
+					<input id= "in-fecha" class="frm" type="date" placeholder ="Fecha" class="">
+					<label id="fecha" class= "alert" for=""></label>
+				</div>
+				
+				<div class="form-group col-md-6 ">	
+					<input  id="in-rucemi" class="frm" type="number" placeholder ="Monto total"  >
+					<label id="ruc-emi" class= "alert" for=""></label>
+				</div>
+				<div class="form-group col-md-12 center">	
+						<img src="img/captcha.PNG" alt="">
+					</div>
+		</div>
+		<div class="buscar">
+			<button id="btn-buscar" class="boton verde"><i class="fas fa-search"></i>  Buscar documento</button>
+		</div>
+			
+
+	</div>			
+
+		
+</div>
+
+
+
+<script src="js/validation.js">
+</script>
+
+<footer class="footer">	
+				<img src="img/css-logo.png" alt="">
+				<a href=""  class="download hidden">Descargar PDF</a>
+				<a href="" class="download hidden">Descargar CDR</a>
+				<a href=""  class="download hidden">Descargar XML</a>
+				<a  href="https://www.css.pe/" class="download" id="copy">© 2019 Computer System Solution</a>
+</footer>
+
+</body>
+	<script>
+		$("#btn-buscar").click(function(){
+			$(".download").removeClass("hidden");	
+			$("#copy").addClass("hidden");	
+	});
+
+	</script>
+</html>
